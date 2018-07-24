@@ -1,0 +1,109 @@
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+% Formato para los talleres del curso de Métodos Computacionales
+% Universidad de los Andes
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[absolute]{textpos} % Para poner una imagen en posiciones arbitrarias
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{hyperref}
+%\decimalpoint
+
+\begin{document}
+\begin{center}
+{\Large Métodos Computacionales} \\
+Resultados Juan Diego Olivella Cicero - \textsc{201631721}\\
+Intersemestral-2018\\
+\end{center}
+
+
+\noindent
+\section{Gr\'aficas ejercicio 1: Una part\'icula cargada en un campo magn\'etico}
+
+Por medio de la solucion num\'erica de ecuaciones diferenciales ordinarias se pudo calcular la trayectoria de una part\'icula cargada en un campo magn\'etico en funci\'on del tiempo. El m\'etodo empleado fue el de Leap-Grog.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=16cm]{3D.pdf}
+\caption{\label{fig:typical}Gr\'afica de la posici\'on (en 3 dimensiones) en funci\'on del tiempo.}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=16cm]{plot.pdf}
+\caption{\label{fig:typical}Gr\'afica de las variables dependientes en funciones del tiempo. (a) X vs. Y (b) X vs. Z (c) X vs. Z (d) t vs. Y}
+\end{center}
+\end{figure}
+
+De las gr\'aficas anteriores se puede observar el movimiento helicoidal de la part\'icula a medida que transcurre el tiempo. Del mismo modo resalta el movimiento peri\'odico de esta misma debido a las caracter\'isticas del campo magn\'etico. Finalmente resalta la evoluci\'on de la part\'icula a lo largo del eje z debido a que el \'unico componente del campo magn\'etico diferente de cero es el Z.
+
+
+\section{Gr\'aficas ejercicio 2: Ecuaci\'on de Onda en dos dimensiones}
+
+Por medio de la solucion num\'erica de ecuaciones diferenciales parciales se pudo calcular la soluci\'on de la ecuaci\'on de onda en dos dimensiones para dos condiciones espec\'ificas: Bordes de la membrana fijos y libres durante todos los instantes de tiempo.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{inicial.pdf}
+\caption{\label{fig:typical}Gr\'afica de la funci\'on de onda para las condiciones iniciales (en 3 dimensiones) dada la condici\'on de bordes fijos para la membrana.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{60.pdf}
+\caption{\label{fig:typical}Gr\'afica de la funci\'on de onda de la membrana en el timpo t = 60 ms (en 3 dimensiones  para la condici\'on de bordes fijos.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{corte.pdf}
+\caption{\label{fig:typical}G\'arfica de cortes transversales (en x = L/2) de la membrana para cada 10 pasos de tiempo para la condici\'on de bordes fijos.}
+\end{center}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{inicial2.pdf}
+\caption{\label{fig:typical}Gr\'afica de la funci\'on de onda para las condiciones iniciales (en 3 dimensiones) dada la condici\'on de bordes abiertos para la membrana.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{602.pdf}
+\caption{\label{fig:typical}Gr\'afica de la funci\'on de onda de la membrana en el timpo t = 60 ms (en 3 dimensiones  para la condici\'on de bordes abiertos.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{corte2.pdf}
+\caption{\label{fig:typical}G\'arfica de cortes transversales (en x = L/2) de la membrana para cada 10 pasos de tiempo para la condici\'on de bordes abiertos.}
+\end{center}
+\end{figure}
+
+
+A partir de las siguientes im\'agenes se puede observar las principales diferencias y similitudes de las condiciones de frontera de la membrana. En principio, se observa que las condiciones iniciales para cada caso son iguales. Esto ocurre porque en el momento t = 0 s no ha habido interacci\'on de la onda con las fronteras. Del mismo modo, se observa c\'omo en la configuraci\'on de las fronteras fijas existe una interferencia en la onda debido a que esta se regresa cuando alcanza los bordes; paralelamente, se observa que en la segunda configuraci\'on no se presenta tal fen\'omeno. Esto \'ultimo ocurre porque en los bordes abiertos la onda sigue 'fluyendo' a las afueras de la membrana.
+
+
+
+\end{document}
