@@ -73,8 +73,7 @@ int main()
 	
 	float deltat = (deltax)/(C*1.5);
 
-	float maxt = 0.6
-	  ;
+	float maxt = 0.6;
 
 	float mint = 0;
 
@@ -226,7 +225,7 @@ int main()
 		         {
 				
 
-			        if(f%2500 == 0  && o == (puntosx/2))
+			        if(f%1500 == 0  && o == (puntosx/2))
 				{
 
 				     myfi  << y[p] << "  " << phi_pasado[o][p] <<  "\n";
@@ -373,7 +372,7 @@ int main()
 		         {
 				
 
-			        if(f%2500 == 0  && o == (puntosx/2))
+			        if(f%1500 == 0  && o == (puntosx/2))
 				{
 
 				     m  << y[p] << "  " << phi_pasado2[o][p] <<  "\n";
